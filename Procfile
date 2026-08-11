@@ -1,1 +1,1 @@
-web: cd backend && python -m main
+web: python -m main
