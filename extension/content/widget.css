@@ -1,0 +1,308 @@
+#curia-ia-widget {
+  all: initial;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 2147483646;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1a1a1a;
+}
+
+.curia-widget-panel {
+  width: 380px;
+  max-height: 90vh;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18), 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: curia-slide-in 0.25s ease-out;
+}
+
+@keyframes curia-slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.curia-widget-header {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  color: #ffffff;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.curia-widget-header h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.curia-widget-header .curia-badge {
+  width: 26px;
+  height: 26px;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.curia-widget-close {
+  background: transparent;
+  border: 0;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  padding: 2px 8px;
+  border-radius: 6px;
+  opacity: 0.85;
+  transition: opacity 0.15s;
+}
+.curia-widget-close:hover {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.curia-widget-body {
+  padding: 16px 18px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  overflow-y: auto;
+  max-height: calc(90vh - 58px);
+}
+
+.curia-section-title {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: #4b5563;
+  margin: 0 0 4px;
+}
+
+.curia-upload {
+  border: 2px dashed #9ca3af;
+  border-radius: 10px;
+  padding: 18px 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: #f9fafb;
+}
+.curia-upload:hover,
+.curia-upload.dragover {
+  border-color: #3b82f6;
+  background: #eff6ff;
+}
+.curia-upload input[type="file"] {
+  display: none;
+}
+.curia-upload-label {
+  display: block;
+  cursor: pointer;
+}
+.curia-upload-icon {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+.curia-upload-text {
+  font-size: 13px;
+  color: #374151;
+  font-weight: 600;
+}
+.curia-upload-sub {
+  font-size: 11px;
+  color: #6b7280;
+  margin-top: 2px;
+}
+.curia-file-name {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #2563eb;
+  font-weight: 600;
+  word-break: break-all;
+}
+
+.curia-btn {
+  width: 100%;
+  border: 0;
+  padding: 11px 14px;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.08s ease, opacity 0.15s;
+}
+.curia-btn:active {
+  transform: translateY(1px);
+}
+.curia-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.curia-btn-primary {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+.curia-btn-primary:hover:not(:disabled) {
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.4);
+}
+.curia-btn-secondary {
+  background: #f3f4f6;
+  color: #111827;
+  border: 1px solid #e5e7eb;
+}
+
+.curia-status {
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 12.5px;
+  color: #075985;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.curia-status.curia-status-error {
+  background: #fef2f2;
+  border-color: #fecaca;
+  color: #991b1b;
+}
+.curia-status.curia-status-success {
+  background: #ecfdf5;
+  border-color: #a7f3d0;
+  color: #065f46;
+}
+.curia-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #0ea5e9;
+  animation: curia-pulse 1.4s ease-in-out infinite;
+  flex-shrink: 0;
+}
+.curia-status-success .curia-status-dot {
+  background: #10b981;
+  animation: none;
+}
+.curia-status-error .curia-status-dot {
+  background: #ef4444;
+  animation: none;
+}
+@keyframes curia-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.curia-preview-group {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 12px;
+  background: #fafafa;
+}
+.curia-preview-group h4 {
+  margin: 0 0 8px;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #1e40af;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.curia-field {
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.curia-field:last-child {
+  margin-bottom: 0;
+}
+.curia-field label {
+  font-size: 10.5px;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+.curia-field input {
+  all: unset;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 6px 9px;
+  font-size: 12.5px;
+  color: #111827;
+  width: 100%;
+  transition: border-color 0.15s;
+}
+.curia-field input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+.curia-divider {
+  height: 1px;
+  background: #e5e7eb;
+  margin: 2px 0;
+}
+
+.curia-progress {
+  height: 4px;
+  background: #e5e7eb;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.curia-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #2563eb, #60a5fa);
+  width: 0%;
+  transition: width 0.3s;
+}
+
+.curia-toggle-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 2147483647;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.4);
+  font-size: 24px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+.curia-toggle-btn:hover {
+  transform: scale(1.06);
+}

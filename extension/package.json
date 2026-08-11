@@ -1,0 +1,12 @@
+{
+  "name": "curia-ia-extension",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Extensão Chrome/Edge para automação de registros de casamento no Cúria Online.",
+  "scripts": {
+    "generate-icons": "node generate-icons.js"
+  },
+  "optionalDependencies": {
+    "canvas": "^2.11.2"
+  }
+}
