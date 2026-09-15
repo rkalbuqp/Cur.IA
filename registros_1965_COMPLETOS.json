@@ -1,0 +1,3148 @@
+[
+  {
+    "livro": "",
+    "folha": "181",
+    "numero": "32",
+    "ano_texto": "1965",
+    "data_celebacao": "02/02/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Raimundo Manuel Rodrigues",
+    "testemunha_noiva": "Raimundo Rodrigues da Silva",
+    "noivo": {
+      "nome": "Amaro Manuel Rodrigues",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Severina Maria da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "181",
+    "numero": "33",
+    "ano_texto": "1965",
+    "data_celebacao": "02/02/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Jonas Menezes",
+    "testemunha_noiva": "",
+    "noivo": {
+      "nome": "Manuel Ferreira da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Cândida Maria da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "181",
+    "numero": "34",
+    "ano_texto": "1965",
+    "data_celebacao": "02/02/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Jonas Meneses",
+    "testemunha_noiva": "",
+    "noivo": {
+      "nome": "Vicente Modestino da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Severina Valentina da Silva",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "181",
+    "numero": "35",
+    "ano_texto": "1965",
+    "data_celebacao": "02/02/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Jonas Meneses",
+    "testemunha_noiva": "",
+    "noivo": {
+      "nome": "Euclides Pereira Ramos",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Joana Antonia dos Prazeres",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "182",
+    "numero": "36",
+    "ano_texto": "1965",
+    "data_celebacao": "09/02/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Manuel Severino de Freitas",
+    "testemunha_noiva": "Jorge Pereira Ramos",
+    "noivo": {
+      "nome": "José Celestino da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Júlia Maria da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "182",
+    "numero": "37",
+    "ano_texto": "1965",
+    "data_celebacao": "09/02/1900",
+    "hora_celebacao": "09:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "João Gomes de Lima",
+    "testemunha_noiva": "José Ferreira de Lima",
+    "noivo": {
+      "nome": "Severino Gomes da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Corina Alexandre da Silva",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "182",
+    "numero": "38",
+    "ano_texto": "1965",
+    "data_celebacao": "09/02/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Thomas Rodrigues da Silva",
+    "testemunha_noiva": "Raimunda Rodrigues",
+    "noivo": {
+      "nome": "José Rodrigues da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Reila Antonia da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "182",
+    "numero": "39",
+    "ano_texto": "1965",
+    "data_celebacao": "09/02/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Manoel Ferreira de Lima",
+    "testemunha_noiva": "Manuel Ferreira de Lima",
+    "noivo": {
+      "nome": "Bras Ferreira de Lima",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Vicencia Gora da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "183",
+    "numero": "40",
+    "ano_texto": "1965",
+    "data_celebacao": "09/02/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Júlio Laurentino da Silva",
+    "testemunha_noiva": "Manuel Laurentino da Silva",
+    "noivo": {
+      "nome": "Antônio Severino dos Santos",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Benedita Maria de Santana",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "183",
+    "numero": "41",
+    "ano_texto": "1965",
+    "data_celebacao": "09/02/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "José França da Silva",
+    "testemunha_noiva": "Vicente Ferreira da Silva",
+    "noivo": {
+      "nome": "Manoel França da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria Severina de Freitas",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "183",
+    "numero": "42",
+    "ano_texto": "1965",
+    "data_celebacao": "09/02/1900",
+    "hora_celebacao": "27:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Hélio Câmara de Lima",
+    "testemunha_noiva": "Zacarias Ferreira de Lima",
+    "noivo": {
+      "nome": "Manuel Antônio do Nascimento",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Regina Severina da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "183",
+    "numero": "43",
+    "ano_texto": "1965",
+    "data_celebacao": "09/02/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Antônio Heroniano de Oliveira",
+    "testemunha_noiva": "Manuel Soares de Arruda",
+    "noivo": {
+      "nome": "Raimundo Caetano Bezerra",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Izabell Maria da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "184",
+    "numero": "44",
+    "ano_texto": "1965",
+    "data_celebacao": "09/02/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Raimundo Manuel da Silva",
+    "testemunha_noiva": "Martinho Ferreira de Lima",
+    "noivo": {
+      "nome": "Antônio Ferreira de Lima",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria Filomena da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "184",
+    "numero": "45",
+    "ano_texto": "1965",
+    "data_celebacao": "09/02/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "José Severino de Andrade",
+    "testemunha_noiva": "Manoel Lourenço de Andrade",
+    "noivo": {
+      "nome": "José Severino de Andrade",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria Severina da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "184",
+    "numero": "46",
+    "ano_texto": "1965",
+    "data_celebacao": "",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Francisco Manuel da Silva",
+    "testemunha_noiva": "José Pedro de Assis",
+    "hora_celebacao": "",
+    "noivo": {
+      "nome": "José Pedro da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria Francisca de Jesus",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "184",
+    "numero": "47",
+    "ano_texto": "1962",
+    "data_celebacao": "",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "[ilegível]",
+    "hora_celebacao": "",
+    "testemunha_noiva": "",
+    "noivo": {
+      "nome": "José Alonso Ferreira Filho",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Josefa Severiana de França",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "184",
+    "numero": "48",
+    "ano_texto": "1962",
+    "data_celebacao": "",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Manuel Mariano da Silva",
+    "testemunha_noiva": "Antônio Severino de Moura",
+    "hora_celebacao": "",
+    "local_celebacao": "",
+    "noivo": {
+      "nome": "José Severino de Moura",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria Severina de Moura",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "184",
+    "numero": "52",
+    "ano_texto": "1965",
+    "data_celebacao": "",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Raimundo Gomes de Moura",
+    "testemunha_noiva": "José Severino Marcos",
+    "noivo": {
+      "nome": "José Agostinho da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria do Carmo da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "184",
+    "numero": "53",
+    "ano_texto": "1965",
+    "data_celebacao": "",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "[ilegível]",
+    "testemunha_noiva": "",
+    "noivo": {
+      "nome": "[Informação parcial no documento]",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "[Informação parcial no documento]",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "184",
+    "numero": "54",
+    "ano_texto": "1965",
+    "data_celebacao": "",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Waldemar Ferreira da Silva",
+    "testemunha_noiva": "[ilegível]",
+    "noivo": {
+      "nome": "José Caitano Soares",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria Joaquina do Espírito Santo",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "184",
+    "numero": "55",
+    "ano_texto": "1965",
+    "data_celebacao": "",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Paes Ferreira",
+    "testemunha_noiva": "Benjamim Ferreira da Silva",
+    "hora_celebacao": "",
+    "noivo": {
+      "nome": "José Ferreira de Lima",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Júlia Maria da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "184",
+    "numero": "56",
+    "ano_texto": "1965",
+    "data_celebacao": "20/02/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Severino Gomes de Moura",
+    "testemunha_noiva": "João Francisco da Silva",
+    "noivo": {
+      "nome": "Apolônio Júlia Ferreira",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Josefa Joana de Jesus",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "184",
+    "numero": "57",
+    "ano_texto": "1965",
+    "data_celebacao": "20/02/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Pedro Paulo Campos",
+    "testemunha_noiva": "João Xavier de Oliveira",
+    "noivo": {
+      "nome": "Daniel Severino de Lima",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Francisca Severina Xavier",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "184",
+    "numero": "58",
+    "ano_texto": "1965",
+    "data_celebacao": "03/02/1900",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "José Rodrigues da Silva",
+    "testemunha_noiva": "Francisco de Souza",
+    "hora_celebacao": "",
+    "noivo": {
+      "nome": "José Francisco de Souza",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "America Josefa da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "184",
+    "numero": "59",
+    "ano_texto": "1965",
+    "data_celebacao": "",
+    "local_celebacao": "Capela Redenção [?] desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Manuel Claudiano Monteiro",
+    "testemunha_noiva": "Vicente Delarmino da Silva",
+    "hora_celebacao": "",
+    "noivo": {
+      "nome": "Manuel Pereira Sobrinho",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Teréza Maria da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "184",
+    "numero": "60",
+    "ano_texto": "1965",
+    "data_celebacao": "20/02/1900",
+    "hora_celebacao": "11:00",
+    "local_celebacao": "Capela de Salgadinho desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "João Pereira de Arruda",
+    "testemunha_noiva": "Severino Horácio dos Santos",
+    "noivo": {
+      "nome": "Henrique Gerâncio Salvador",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria Severina da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "184",
+    "numero": "61",
+    "ano_texto": "1965",
+    "data_celebacao": "",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "José Lopes de Assis",
+    "testemunha_noiva": "Argênio José da Silva",
+    "noivo": {
+      "nome": "João Fidélis Ramos",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Berenice Eunice de Maria Ramos",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "184",
+    "numero": "62",
+    "ano_texto": "1965",
+    "data_celebacao": "02/03/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "José Barbosa da Silva",
+    "testemunha_noiva": "Antônio Gomes de Oliveira",
+    "noivo": {
+      "nome": "José Aureliano da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Aurora Severina da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "184",
+    "numero": "63",
+    "ano_texto": "1965",
+    "data_celebacao": "02/03/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Manuel Ferreira de Lima",
+    "testemunha_noiva": "Severino Firmino da Costa",
+    "noivo": {
+      "nome": "Severino André da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Josefa Maria da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "189",
+    "numero": "64",
+    "ano_texto": "1965",
+    "data_celebacao": "",
+    "hora_celebacao": "10:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Miguel Domingos de Laura",
+    "testemunha_noiva": "Olívia Morais",
+    "noivo": {
+      "nome": "Severino Marcelino da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Beatriz Maria Sepromorte [?]",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "189",
+    "numero": "65",
+    "ano_texto": "1965",
+    "data_celebacao": "",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Rodolfo dos Santos",
+    "testemunha_noiva": "José Vicente da Silva",
+    "hora_celebacao": "",
+    "noivo": {
+      "nome": "José Gomes de Farias",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria Tereza da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "189",
+    "numero": "66",
+    "ano_texto": "1965",
+    "data_celebacao": "",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Joaquim Otávio do Nascimento",
+    "testemunha_noiva": "José Cláudio do Nascimento",
+    "noivo": {
+      "nome": "Manuel Otávio do Nascimento",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria Ana da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "189",
+    "numero": "67",
+    "ano_texto": "1965",
+    "data_celebacao": "09/03/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Lauro da Silva Gonçalves",
+    "testemunha_noiva": "José Gonçalves de Oliveira",
+    "noivo": {
+      "nome": "Severino Ferreira Farias",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Severina Maria da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "190",
+    "numero": "68",
+    "ano_texto": "1965",
+    "data_celebacao": "09/03/1900",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Edgar Correia de Melo",
+    "testemunha_noiva": "Manuel Amâncio da Silva",
+    "hora_celebacao": "",
+    "noivo": {
+      "nome": "Manuel José Pinho",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Severina Joaquina de Santana",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "190",
+    "numero": "69",
+    "ano_texto": "1965",
+    "data_celebacao": "",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Benedita Gomes da Silva",
+    "testemunha_noiva": "João Evaristo da Silva",
+    "hora_celebacao": "",
+    "noivo": {
+      "nome": "José Severiano de Souza",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria Honorata da Silva",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "190",
+    "numero": "70",
+    "ano_texto": "1965",
+    "data_celebacao": "15/03/1900",
+    "hora_celebacao": "09:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "José Silva de Santana",
+    "testemunha_noiva": "Manuel José da Silva",
+    "noivo": {
+      "nome": "Salvistiano João de Santana",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria José da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "190",
+    "numero": "71",
+    "ano_texto": "1965",
+    "data_celebacao": "16/03/1900",
+    "hora_celebacao": "04:00",
+    "local_celebacao": "E Antônio Felipe de Andrade",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Severino Pereira de Lucena",
+    "testemunha_noiva": "Antônio Felipe de Andrade",
+    "noivo": {
+      "nome": "Jorge Miranda de Melo",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Helena Barbosa Pamba [ou Quamba]",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "192",
+    "numero": "72",
+    "ano_texto": "1965",
+    "data_celebacao": "16/03/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Artur Ferreira da Silva",
+    "testemunha_noiva": "Manuel Fernandes de Lima",
+    "noivo": {
+      "nome": "José Francisco do Nascimento",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria da Silva Campos",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "192",
+    "numero": "73",
+    "ano_texto": "1965",
+    "data_celebacao": "16/03/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "João José da Silva",
+    "testemunha_noiva": "José Medias Portela [ou Portela]",
+    "noivo": {
+      "nome": "João Severino da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Raimunda Maria da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "192",
+    "numero": "74",
+    "ano_texto": "1965",
+    "data_celebacao": "16/03/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Severino Gualter do Nascimento",
+    "testemunha_noiva": "João Félix da Silva",
+    "noivo": {
+      "nome": "José Gualter do Nascimento Filho",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Margarida Maria da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "192",
+    "numero": "75",
+    "ano_texto": "1965",
+    "data_celebacao": "17/03/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "José Francisco de Souza",
+    "testemunha_noiva": "José Celestino Pereira",
+    "noivo": {
+      "nome": "Manuel Francisco de Souza",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria Josefa do Espírito Santo",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "192",
+    "numero": "76",
+    "ano_texto": "1965",
+    "data_celebacao": "30/03/1900",
+    "hora_celebacao": "10:00",
+    "local_celebacao": "Capela de Salgadinho desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "João Martins da Silva",
+    "testemunha_noiva": "Severino Manuel das Mercês",
+    "noivo": {
+      "nome": "Severino Luiz da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Rita Francisco Cordeiro",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "192",
+    "numero": "77",
+    "ano_texto": "1965",
+    "data_celebacao": "30/03/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "José Gomes da Silva",
+    "testemunha_noiva": "João Pereira dos Santos",
+    "noivo": {
+      "nome": "Heleno Francisco da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Josefa Felismina da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "192",
+    "numero": "78",
+    "ano_texto": "1965",
+    "data_celebacao": "30/03/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Virgínia Hipólito de Andarpos [ou Andrades]",
+    "testemunha_noiva": "José Severino da Silva",
+    "noivo": {
+      "nome": "Antônio Francisco dos Santos",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Severiana Sebastiana da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "192",
+    "numero": "79",
+    "ano_texto": "1965",
+    "data_celebacao": "",
+    "hora_celebacao": "07:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Luiz [ou Lourenço]",
+    "testemunha_noiva": "Manuel Galdino da Silva",
+    "noivo": {
+      "nome": "Severino Pedro da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria José do Espírito Santo",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "193",
+    "numero": "80",
+    "ano_texto": "1965",
+    "data_celebacao": "20/04/1900",
+    "hora_celebacao": "09:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Raimundo João da Silva",
+    "testemunha_noiva": "João Sebastião da Silva",
+    "noivo": {
+      "nome": "Raimundo João da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria Francisca da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "193",
+    "numero": "81",
+    "ano_texto": "1965",
+    "data_celebacao": "20/04/1900",
+    "hora_celebacao": "07:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "José Estácio Filho",
+    "testemunha_noiva": "Benjamim Ferreira de Lima",
+    "noivo": {
+      "nome": "José Pereira de Oliveira",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Benedita Gomes da Silva",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "193",
+    "numero": "82",
+    "ano_texto": "1965",
+    "data_celebacao": "20/04/1900",
+    "hora_celebacao": "07:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Antônio Lauriano Ribeiro",
+    "testemunha_noiva": "João José de Lira",
+    "noivo": {
+      "nome": "Laureano Ribeiro da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria Gomes de Andrade",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "193",
+    "numero": "82",
+    "ano_texto": "1965",
+    "data_celebacao": "20/04/1900",
+    "hora_celebacao": "07:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "José Ferreira Campos",
+    "testemunha_noiva": "Manuel Severino Costa",
+    "noivo": {
+      "nome": "Juvenal Francisco da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria José dos Santos",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "194",
+    "numero": "84",
+    "ano_texto": "1965",
+    "data_celebacao": "04/05/1900",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Manoel Joaquim da Silva",
+    "testemunha_noiva": "Manuel Vicente Ferreira",
+    "hora_celebacao": "",
+    "noivo": {
+      "nome": "Narciso Joaquim Miqueu [ou Miguel]",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Josefa Laureana da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "194",
+    "numero": "85",
+    "ano_texto": "1965",
+    "data_celebacao": "04/05/1900",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Severino Barroso de Arruda",
+    "testemunha_noiva": "Severino José de Sousa",
+    "hora_celebacao": "",
+    "noivo": {
+      "nome": "Manuel Severino da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Edalgisa Josefa de Sousa",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "194",
+    "numero": "86",
+    "ano_texto": "1965",
+    "data_celebacao": "04/05/1900",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Elias Rocha de Paula",
+    "testemunha_noiva": "Severino Serina de Lucena",
+    "hora_celebacao": "",
+    "noivo": {
+      "nome": "José Raimundo de Andrade",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria Cavalcanti da Silva",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "194",
+    "numero": "87",
+    "ano_texto": "1965",
+    "data_celebacao": "09/05/1900",
+    "hora_celebacao": "10:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "José Ferreira dos Santos",
+    "testemunha_noiva": "José Maria Negromonte",
+    "noivo": {
+      "nome": "Geraldo Brasilino dos Santos",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Ana Bezerra Negromonte",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "195",
+    "numero": "88",
+    "ano_texto": "1965",
+    "data_celebacao": "10/05/1900",
+    "hora_celebacao": "09:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Manuel Soares da Silva",
+    "testemunha_noiva": "Luiz Bezerra Negromonte",
+    "noivo": {
+      "nome": "Antônio Soares da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Josefa Célia Negromonte",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "195",
+    "numero": "89",
+    "ano_texto": "1965",
+    "data_celebacao": "14/05/1900",
+    "hora_celebacao": "11:00",
+    "local_celebacao": "Capela de Salgadinho desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Ernesto Belarmino Gomes de Araújo",
+    "testemunha_noiva": "Antônio Aloísio da Silva",
+    "noivo": {
+      "nome": "Severino Gonzaga de Arruda",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Graciana Maria dos Prazeres",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "195",
+    "numero": "90",
+    "ano_texto": "1965",
+    "data_celebacao": "16/05/1900",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Manuel Pedro da Silva",
+    "testemunha_noiva": "João Batista da Silva",
+    "hora_celebacao": "",
+    "noivo": {
+      "nome": "Severino Pedro da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Graciana Ventura da Silva",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "195",
+    "numero": "91",
+    "ano_texto": "1965",
+    "data_celebacao": "20/05/1900",
+    "hora_celebacao": "09:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Manuel Felipe de [Lima]",
+    "testemunha_noiva": "Josefa Francisca da Conceição",
+    "noivo": {
+      "nome": "Manuel Antônio da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria Laureana da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "196",
+    "numero": "93",
+    "ano_texto": "1965",
+    "data_celebacao": "",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Severino Aguiar de Arruda",
+    "testemunha_noiva": "Sebastião Florêncio de Melo",
+    "hora_celebacao": "",
+    "local_celebacao": "",
+    "noivo": {
+      "nome": "João Ferreira da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Severiana Santana da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "196",
+    "numero": "94",
+    "ano_texto": "1965",
+    "data_celebacao": "",
+    "hora_celebacao": "09:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Armênio Carlos Gomes",
+    "testemunha_noiva": "José Gomes de Lima",
+    "noivo": {
+      "nome": "Manuel Luís Joaquim",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria Paula da Silva",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "196",
+    "numero": "95",
+    "ano_texto": "1965",
+    "data_celebacao": "30/05/1900",
+    "hora_celebacao": "09:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Sebastião Ferreira da Silva",
+    "testemunha_noiva": "Antônio Joaquim [dos Santos]",
+    "noivo": {
+      "nome": "Dionísio Barbosa da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Postfal Maria da Conceição [ou Pastora]",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "197",
+    "numero": "96",
+    "ano_texto": "1965",
+    "data_celebacao": "",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Manuel Ribeiro de Moura",
+    "testemunha_noiva": "José Cerina da Silva",
+    "noivo": {
+      "nome": "Raimundo Vicente da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Josefa Francelina da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "197",
+    "numero": "97",
+    "ano_texto": "1965",
+    "data_celebacao": "",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Batista de Oliveira",
+    "testemunha_noiva": "José Vicente Ferreira",
+    "hora_celebacao": "",
+    "noivo": {
+      "nome": "Severino José dos Santos",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Oliendiana [ou Olijandrina] Rodrigues da Silva",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "197",
+    "numero": "98",
+    "ano_texto": "1965",
+    "data_celebacao": "",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "[ilegível]",
+    "hora_celebacao": "",
+    "testemunha_noiva": "",
+    "noivo": {
+      "nome": "Raimundo Gomes da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria da Conceição [parcial]",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "197",
+    "numero": "99",
+    "ano_texto": "1965",
+    "data_celebacao": "",
+    "hora_celebacao": "09:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Manuel Joaquim de Santana",
+    "testemunha_noiva": "João Gonçalves Aires",
+    "noivo": {
+      "nome": "Heleno Paulo de Santana",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria de Lourdes da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "198",
+    "numero": "100",
+    "ano_texto": "1965",
+    "data_celebacao": "20/06/1900",
+    "hora_celebacao": "18:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Severino Pereira de Lucena",
+    "testemunha_noiva": "Vicente Ferreira da Silva",
+    "noivo": {
+      "nome": "Orlando Alves do Rego",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Júlia Dias dos Santos",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "198",
+    "numero": "101",
+    "ano_texto": "1965",
+    "data_celebacao": "20/06/1900",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "João Severino da Silva",
+    "testemunha_noiva": "Antônio Ferreira Campos",
+    "hora_celebacao": "",
+    "noivo": {
+      "nome": "José Severino da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Severina Josefa da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "198",
+    "numero": "102",
+    "ano_texto": "1965",
+    "data_celebacao": "",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Manuel Bernardo de Sousa Neto",
+    "testemunha_noiva": "Manuel Soares de Arruda",
+    "hora_celebacao": "",
+    "noivo": {
+      "nome": "João Ferreira da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Madalena Maria da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "198",
+    "numero": "103",
+    "ano_texto": "1965",
+    "data_celebacao": "13/07/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Antônio Inácio da Silva",
+    "testemunha_noiva": "Abdias Barbosa de Aguiar",
+    "noivo": {
+      "nome": "José Gomes dos Santos",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Severina de Souza Costa",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "199",
+    "numero": "104",
+    "ano_texto": "1965",
+    "data_celebacao": "13/07/1900",
+    "hora_celebacao": "07:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Antônio Agapito da Silva",
+    "testemunha_noiva": "Antônio Severino de Moura",
+    "noivo": {
+      "nome": "Manuel Luís da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria Santana da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "199",
+    "numero": "105",
+    "ano_texto": "1965",
+    "data_celebacao": "20/07/1900",
+    "hora_celebacao": "09:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Manuel Ferreira da Silva",
+    "testemunha_noiva": "Virgínio Hipólito de Medeiros",
+    "noivo": {
+      "nome": "João Severino da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Ana Antônia da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "199",
+    "numero": "106",
+    "ano_texto": "1965",
+    "data_celebacao": "",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Manuel Bernardo de Sousa",
+    "testemunha_noiva": "José Jerônimo Cavalcanti",
+    "hora_celebacao": "",
+    "noivo": {
+      "nome": "Raimundo Severino da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Severina Maria da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "199",
+    "numero": "107",
+    "ano_texto": "1965",
+    "data_celebacao": "10/08/1900",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "José Jeriliano de Sousa",
+    "testemunha_noiva": "José Francisco da Silva",
+    "hora_celebacao": "",
+    "noivo": {
+      "nome": "Benjamim Ribeiro de Lemos",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria do Carmo da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "200",
+    "numero": "108",
+    "ano_texto": "1965",
+    "data_celebacao": "10/08/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "José Jeriliano de Sousa",
+    "testemunha_noiva": "José Francisco da Silva",
+    "noivo": {
+      "nome": "Inácio Zacarias da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Graciete Flora da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "200",
+    "numero": "109",
+    "ano_texto": "1965",
+    "data_celebacao": "17/08/1900",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "João Severiano de Albuquerque",
+    "testemunha_noiva": "Manuel Severiano da Silva",
+    "hora_celebacao": "",
+    "noivo": {
+      "nome": "Antônio Francisco de Meneses",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Josefa Maria da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "200",
+    "numero": "110",
+    "ano_texto": "1965",
+    "data_celebacao": "20/08/1900",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "José Jardelino da Silva",
+    "testemunha_noiva": "Antônio Jardelino da Silva",
+    "hora_celebacao": "",
+    "noivo": {
+      "nome": "Amaro Felipe Neri",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Teresa Maria da Silva",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "200",
+    "numero": "111",
+    "ano_texto": "1965",
+    "data_celebacao": "30/08/1900",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Severino Ferreira Campos",
+    "testemunha_noiva": "Manuel Gomes dos Santos",
+    "hora_celebacao": "",
+    "noivo": {
+      "nome": "Pedro Ferreira Campos",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria Bernadete Salvador",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "201",
+    "numero": "112",
+    "ano_texto": "1965",
+    "data_celebacao": "",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "José Batista de Oliveira",
+    "testemunha_noiva": "Severino Antônio da Silva",
+    "noivo": {
+      "nome": "José Batista da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Teresa Maria da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "201",
+    "numero": "113",
+    "ano_texto": "1965",
+    "data_celebacao": "07/09/1900",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Raimundo Otiano da Borba",
+    "testemunha_noiva": "Manuel Barbosa de Lima",
+    "hora_celebacao": "",
+    "noivo": {
+      "nome": "Severino Clemente Bezerra Filho",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Geronima Maria da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "201",
+    "numero": "114",
+    "ano_texto": "1962",
+    "data_celebacao": "",
+    "hora_celebacao": "15:00",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "[Manoel Ferreira",
+    "testemunha_noiva": "outros]",
+    "local_celebacao": "",
+    "noivo": {
+      "nome": "José Lyda de [Campos Ferreira Filho]",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "[Informação parcial]",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "201",
+    "numero": "115",
+    "ano_texto": "1965",
+    "data_celebacao": "13/09/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Amaro Alexandre da Cruz",
+    "testemunha_noiva": "Amarílio José da Cruz",
+    "noivo": {
+      "nome": "José Bernardo da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria Francisca da Silva",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "202",
+    "numero": "116",
+    "ano_texto": "1965",
+    "data_celebacao": "15/09/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "José Ferreira de Lima",
+    "testemunha_noiva": "Horácio Barros da Silva",
+    "noivo": {
+      "nome": "Manuel Ferreira da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Francisca Maria da Silva",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "202",
+    "numero": "117",
+    "ano_texto": "1965",
+    "data_celebacao": "19/09/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Miguel da Silva",
+    "testemunha_noiva": "João Felipe de Souza",
+    "noivo": {
+      "nome": "José Henrique da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Josefa Maria de Jesus",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "202",
+    "numero": "118",
+    "ano_texto": "1965",
+    "data_celebacao": "",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Severo Claudino Ferreira",
+    "testemunha_noiva": "José Tomaz de Santana",
+    "noivo": {
+      "nome": "Manuel Francisco de Araújo",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Cecília Rodrigues de Jesus",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "202",
+    "numero": "119",
+    "ano_texto": "1965",
+    "data_celebacao": "03/10/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Antônio Chaves Nunes da Silva",
+    "testemunha_noiva": "Manuel Francisco",
+    "noivo": {
+      "nome": "Francisco Gomes de Sousa",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Josefa Francisca de Lucena",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "203",
+    "numero": "120",
+    "ano_texto": "1965",
+    "data_celebacao": "04/10/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Otaviano Severino de Moura",
+    "testemunha_noiva": "José Ribeiro da Silva",
+    "noivo": {
+      "nome": "Antônio Laurentino de Moura",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Luiza Maria da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "203",
+    "numero": "121",
+    "ano_texto": "1965",
+    "data_celebacao": "05/10/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Valdino Antônio de Lima",
+    "testemunha_noiva": "João Sortela Gomes",
+    "noivo": {
+      "nome": "Martinho Antônio de Lima",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria Santana dos Santos",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "203",
+    "numero": "122",
+    "ano_texto": "1965",
+    "data_celebacao": "10/10/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Antônio Domingos da Silva",
+    "testemunha_noiva": "Antônio Severino da Silva",
+    "noivo": {
+      "nome": "Sebastião Celestino da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria Josefa da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "203",
+    "numero": "123",
+    "ano_texto": "1965",
+    "data_celebacao": "10/10/1900",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "José Severiano de Moura",
+    "testemunha_noiva": "José Manuel dos Santos",
+    "hora_celebacao": "",
+    "noivo": {
+      "nome": "Manuel Vicente de Lima",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Severina Ana dos Santos",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "204",
+    "numero": "124",
+    "ano_texto": "1965",
+    "data_celebacao": "16/10/1900",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "José Severino de Moura",
+    "testemunha_noiva": "José Francisco dos Santos",
+    "hora_celebacao": "",
+    "noivo": {
+      "nome": "Álvaro Fernandes de Oliveira",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Margarida Francisca da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "204",
+    "numero": "125",
+    "ano_texto": "1965",
+    "data_celebacao": "30/10/1900",
+    "hora_celebacao": "10:00",
+    "local_celebacao": "Capela de S",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Augusto Ramos Gaudêncio",
+    "testemunha_noiva": "Jaime Gomes da Silva",
+    "noivo": {
+      "nome": "Vicente Dionísio da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Severina Maria da Silva",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "204",
+    "numero": "126",
+    "ano_texto": "1965",
+    "data_celebacao": "",
+    "hora_celebacao": "10:00",
+    "local_celebacao": "Capela de Pedra Farpada desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Manuel Botelho de Andrade",
+    "testemunha_noiva": "Álvaro Francisco de Moura",
+    "noivo": {
+      "nome": "Manuel Francisco da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria José da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "204",
+    "numero": "127",
+    "ano_texto": "1965",
+    "data_celebacao": "20/07/1900",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Antônio Cavalcanti de Albuquerque",
+    "testemunha_noiva": "Joaquim de Andrade Lima",
+    "hora_celebacao": "",
+    "local_celebacao": "",
+    "noivo": {
+      "nome": "João Paulino da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Josefa Maria da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "204",
+    "numero": "128",
+    "ano_texto": "1965",
+    "data_celebacao": "",
+    "hora_celebacao": "16:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Vicente Barreto de Morais",
+    "testemunha_noiva": "José Figueiredo de Meneses",
+    "noivo": {
+      "nome": "Jesuíno Teodoro da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Guiomar Soares Cordeiro",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "204",
+    "numero": "129",
+    "ano_texto": "1965",
+    "data_celebacao": "20/10/1900",
+    "hora_celebacao": "10:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Luís Bezerra Negromonte",
+    "testemunha_noiva": "Dacisial Jorge Pessoa",
+    "noivo": {
+      "nome": "Samuel Galdino de Aguiar",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Noêmia Antônia da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "205",
+    "numero": "130",
+    "ano_texto": "1965",
+    "data_celebacao": "30/10/1900",
+    "hora_celebacao": "20:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Antônio Guilherme dos Santos",
+    "testemunha_noiva": "Ernesto Cavalcanti",
+    "noivo": {
+      "nome": "Sebastião Tavora da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria da Conceição de Jesus",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "205",
+    "numero": "131",
+    "ano_texto": "1965",
+    "data_celebacao": "30/10/1900",
+    "hora_celebacao": "09:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "José Batista da Silva",
+    "testemunha_noiva": "Miguel Cavalcanti",
+    "noivo": {
+      "nome": "Damião Francisco da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria Estelvina de Oliveira",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "206",
+    "numero": "132",
+    "ano_texto": "1965",
+    "data_celebacao": "30/10/1900",
+    "hora_celebacao": "10:00",
+    "local_celebacao": "Capela de Jacadinha [Jacandirua] desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Felipe de Almeida Menezes",
+    "testemunha_noiva": "Manuel Lourenço de Andrade",
+    "noivo": {
+      "nome": "João Otílio da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Ana Barbosa de Lima",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "206",
+    "numero": "133",
+    "ano_texto": "1963",
+    "data_celebacao": "20/02/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Manuel Pereira dos Santos",
+    "testemunha_noiva": "Antônio Guilherme dos Santos",
+    "noivo": {
+      "nome": "Severino Félix de Oliveira",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria Alexandre de Souza",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "206",
+    "numero": "134",
+    "ano_texto": "1965",
+    "data_celebacao": "09/11/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Merquiades Chaves da Silva",
+    "testemunha_noiva": "[ilegível]",
+    "noivo": {
+      "nome": "José Valdevino de Lima",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Helena Carlos de Oliveira",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "206",
+    "numero": "135",
+    "ano_texto": "1965",
+    "data_celebacao": "11/11/1900",
+    "local_celebacao": "Capela de Salgadinho desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Amaro Amaro",
+    "hora_celebacao": "",
+    "testemunha_noiva": "",
+    "noivo": {
+      "nome": "Francisco de Assis da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Berenice Maria da Silva",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "207",
+    "numero": "136",
+    "ano_texto": "1965",
+    "data_celebacao": "12/12/1900",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Zacarias Cavalcanti",
+    "testemunha_noiva": "Severina Cavalcanti",
+    "hora_celebacao": "",
+    "noivo": {
+      "nome": "Carlos Batista de Oliveira",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Joana Filomena Pereira",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "207",
+    "numero": "137",
+    "ano_texto": "1965",
+    "data_celebacao": "14/11/1900",
+    "hora_celebacao": "10:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Manuel Luís de Arruda",
+    "testemunha_noiva": "Antônio Ferreira Chaves",
+    "noivo": {
+      "nome": "Lourenço Antônio Felipe",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Graciete Pereira dos Santos",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "208",
+    "numero": "138",
+    "ano_texto": "1965",
+    "data_celebacao": "14/11/1900",
+    "hora_celebacao": "10:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Severino Manuel Ribeiro",
+    "testemunha_noiva": "Flaviano Trajano de Moura",
+    "noivo": {
+      "nome": "Manuel de Sousa Filho",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Matilde Ribeiro da Silva",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "208",
+    "numero": "139",
+    "ano_texto": "1965",
+    "data_celebacao": "",
+    "hora_celebacao": "09:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Severino Antônio Laurentino",
+    "testemunha_noiva": "Amaro José da Silva",
+    "noivo": {
+      "nome": "Amaro José da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Santana Luísa da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "209",
+    "numero": "142",
+    "ano_texto": "1965",
+    "data_celebacao": "17/11/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Luiz Bezerra Negromonte",
+    "testemunha_noiva": "João Domingos de Lima",
+    "noivo": {
+      "nome": "Manuel Soares da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Cecília Caetana da Silva",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "209",
+    "numero": "143",
+    "ano_texto": "1965",
+    "data_celebacao": "18/11/1900",
+    "hora_celebacao": "10:00",
+    "local_celebacao": "Capela de Pedra Farpada desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Severino José da Silva",
+    "testemunha_noiva": "José Inácio de Assis",
+    "noivo": {
+      "nome": "Zilon Francisco Cordeiro e Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Dilza Francisca Cordeiro",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "209",
+    "numero": "144",
+    "ano_texto": "1965",
+    "data_celebacao": "20/11/1900",
+    "hora_celebacao": "07:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Luís Tavares da Silva",
+    "testemunha_noiva": "Severino Gomes de Sousa",
+    "noivo": {
+      "nome": "Severino José da Costa",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Josefa Ana da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "209",
+    "numero": "145",
+    "ano_texto": "1965",
+    "data_celebacao": "30/11/1900",
+    "hora_celebacao": "07:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Manuel José da Silva",
+    "testemunha_noiva": "Manuel Gregório Carlos",
+    "noivo": {
+      "nome": "Jaime Severino da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria Norma da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "210",
+    "numero": "146",
+    "ano_texto": "1965",
+    "data_celebacao": "",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Gomes de Queiroz",
+    "testemunha_noiva": "Missias Bispo da Costa",
+    "noivo": {
+      "nome": "Antônio Francisco de Moura",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Helena Maria de Albuquerque",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "210",
+    "numero": "147",
+    "ano_texto": "1965",
+    "data_celebacao": "14/12/1900",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "José de Andrade",
+    "testemunha_noiva": "Paulino da Silva",
+    "hora_celebacao": "",
+    "local_celebacao": "",
+    "noivo": {
+      "nome": "Gervásio Carlos de Oliveira",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria da Conceição [de Andrade]",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "210",
+    "numero": "148",
+    "ano_texto": "1965",
+    "data_celebacao": "14/12/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "José Gomes de Farias",
+    "testemunha_noiva": "João José de Oliveira",
+    "noivo": {
+      "nome": "Severino José de Farias",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Ana da Conceição [ou Amara]",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "210",
+    "numero": "149",
+    "ano_texto": "1965",
+    "data_celebacao": "14/12/1900",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Ferreira Filho",
+    "testemunha_noiva": "Manuel Rodrigues",
+    "hora_celebacao": "",
+    "noivo": {
+      "nome": "Luís Rodrigues da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Genoveva Batista de Lima",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "210",
+    "numero": "150",
+    "ano_texto": "1965",
+    "data_celebacao": "14/12/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "João Raimundo da Silva",
+    "testemunha_noiva": "Severino da Silva e José Severino",
+    "noivo": {
+      "nome": "Sebastião Raimundo dos Santos",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria Margarida Ferreira",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "210",
+    "numero": "151",
+    "ano_texto": "1965",
+    "data_celebacao": "15/12/1900",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "[ilegível]",
+    "hora_celebacao": "",
+    "testemunha_noiva": "",
+    "noivo": {
+      "nome": "Daniel de Oliveira",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Rita Cavalcante da Silva",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "211",
+    "numero": "152",
+    "ano_texto": "1965",
+    "data_celebacao": "19/12/1900",
+    "hora_celebacao": "10:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Jerônimo José de Santana",
+    "testemunha_noiva": "André Cabral da Silva",
+    "noivo": {
+      "nome": "Maurício Martins Pacheco",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Maria Gomes da Silva",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "211",
+    "numero": "153",
+    "ano_texto": "1965",
+    "data_celebacao": "20/12/1900",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Edros [Edes] Elias Borges",
+    "testemunha_noiva": "Manuel Estevam Rubens",
+    "hora_celebacao": "",
+    "noivo": {
+      "nome": "José Elias Benício",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Selina Maria de Lucena",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "211",
+    "numero": "154",
+    "ano_texto": "1965",
+    "data_celebacao": "",
+    "local_celebacao": "Capela de Pedra Farpada desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Gonçalo José Severino",
+    "testemunha_noiva": "Bonifácio Antônio de Moura",
+    "hora_celebacao": "",
+    "noivo": {
+      "nome": "Valdemar Elias Gomes",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Rita Maria da Conceição",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "211",
+    "numero": "155",
+    "ano_texto": "1965",
+    "data_celebacao": "30/12/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Joaquim Gomes da Silva",
+    "testemunha_noiva": "[ilegível]",
+    "noivo": {
+      "nome": "[Informação parcial] Gomes da Silva",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "[Informação parcial]",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "211",
+    "numero": "156",
+    "ano_texto": "1965",
+    "data_celebacao": "30/12/1900",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Valdemar Ferreira da Silva",
+    "testemunha_noiva": "Severino da Silva",
+    "hora_celebacao": "",
+    "noivo": {
+      "nome": "Euclides Severino de Lima",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Josefa Lopes Tabosa",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "211",
+    "numero": "157",
+    "ano_texto": "1965",
+    "data_celebacao": "30/12/1900",
+    "hora_celebacao": "08:00",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Manuel Francisco Chaves",
+    "testemunha_noiva": "Severino Laureano da Silva",
+    "noivo": {
+      "nome": "Rodolfo Soares da Fonseca",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Severina Maria de Jesus",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  },
+  {
+    "livro": "",
+    "folha": "211",
+    "numero": "158",
+    "ano_texto": "1965",
+    "data_celebacao": "20/12/1900",
+    "local_celebacao": "Matriz desta Paróquia de João Alfredo",
+    "testemunha_qualificada": "Redmo",
+    "testemunha_noivo": "Severino José Cavalcanti Ferreira",
+    "testemunha_noiva": "Manuel Justino Gomes",
+    "hora_celebacao": "",
+    "noivo": {
+      "nome": "João José Cavalcanti",
+      "sexo": "MASCULINO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    },
+    "noiva": {
+      "nome": "Regina Augusta da Silva",
+      "sexo": "FEMININO",
+      "profissao": "",
+      "mae": "",
+      "pai": ""
+    }
+  }
+]

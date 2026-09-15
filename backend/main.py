@@ -11,6 +11,13 @@ from pydantic import BaseModel
 import requests
 from PIL import Image
 
+import sys
+try:
+    sys.stdout.reconfigure(encoding="utf-8")
+    sys.stderr.reconfigure(encoding="utf-8")
+except Exception:
+    pass
+
 load_dotenv()
 
 app = FastAPI(title="Curia OCR Backend", version="1.1.0")
@@ -29,7 +36,19 @@ app.add_middleware(
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 if not GEMINI_API_KEY:
-    raise RuntimeError("GEMINI_API_KEY não configurada no arquivo .env")
+    print("[Curia IA] ⚠️  AVISO: GEMINI_API_KEY não configurada no arquivo .env!")
+    print("[Curia IA]    → O servidor vai rodar (upload Word funciona na extensão SEM backend),")
+    print("[Curia IA]    → mas OCR de imagens (/extract-data) vai retornar erro 503.")
+    print("[Curia IA]    → Obtenha uma chave em https://aistudio.google.com/apikey")
+    print("[Curia IA]    → e cole no arquivo: backend/.env  (linha GEMINI_API_KEY=sua_chave)")
+else:
+    print(f"[Curia IA] ✅ GEMINI_API_KEY carregada (tamanho: {len(GEMINI_API_KEY)} caracteres).")
+    try:
+        from google import generativeai as genai
+        genai.configure(api_key=GEMINI_API_KEY)
+        print("[Curia IA] ✅ google-generativeai SDK configurado com sucesso.")
+    except Exception as e_sdk:
+        print(f"[Curia IA] ⚠️  Não foi possível configurar SDK google-generativeai: {e_sdk}")
 
 API_BASES = [
     "https://generativelanguage.googleapis.com/v1",
@@ -68,6 +87,9 @@ PADRÃO QUE VOCÊ ENCONTRARÁ NA IMAGEM:
 
 EXTRAIA ESTRITAMENTE ESTE JSON, sem campos extras:
 {
+  "livro": "",
+  "folha": "",
+  "numero": "",
   "data_celebacao": "",
   "hora_celebacao": "",
   "local_celebacao": "",
@@ -91,6 +113,9 @@ EXTRAIA ESTRITAMENTE ESTE JSON, sem campos extras:
 }
 
 INSTRUÇÕES ESPECIAIS PARA O FORMATO DOS CAMPOS NOVOS:
+- livro: NÚMERO do LIVRO de registro paroquial (ex: "1", "2", "3A", "4B"). Extraia de "LIVRO X", "Livro X", "L X". Se não tiver explícito, deixe vazio.
+- folha: NÚMERO da FOLHA (página) do livro (ex: "181", "182", "200"). Extraia de "FOLHA X", "Folha X", "F X".
+- numero: NÚMERO do TERMO de casamento (ex: "32", "33", "158"). Extraia de "Termo N. X", "Termo N° X", "Termo Nº X", "Número X".
 - data_celebacao: Formato BRASILEIRO DD/MM/AAAA. Exemplo: 28/01/1955. Se for data por extenso como "Aos vinte dias do mês de janeiro de 1955" → 20/01/1955. Se for "Aos sete dias do mês de março do ano de mil novecentos e setenta e dois" → 07/03/1972. Sempre converta extenso para números.
 - hora_celebacao: Formato HH:MM (24h). Ex: "pelas dez horas" → "10:00"; "pelas oito e trinta horas" → "08:30"; "pelas dezenove horas" → "19:00".
 - local_celebacao: Nome completo do local (ex: "Capela de Autas", "Igreja Matriz de Boa Alfredo"). Inclua nome da Capela/Igreja + se tiver "desta Paróquia de X", inclua a paróquia.
@@ -117,6 +142,9 @@ class Pessoa(BaseModel):
 
 
 class DadosCasamento(BaseModel):
+    livro: str = ""
+    folha: str = ""
+    numero: str = ""
     data_celebacao: str = ""
     hora_celebacao: str = ""
     local_celebacao: str = ""
@@ -525,6 +553,9 @@ def _extrair_json_com_recuperacao(texto_resposta: str):
     campos_raiz = _extrair_campos_por_regex(
         limpo,
         chaves=(
+            "livro",
+            "folha",
+            "numero",
             "data_celebacao",
             "hora_celebacao",
             "local_celebacao",
@@ -535,6 +566,9 @@ def _extrair_json_com_recuperacao(texto_resposta: str):
     )
 
     recuperado = {
+        "livro": campos_raiz.get("livro", ""),
+        "folha": campos_raiz.get("folha", ""),
+        "numero": campos_raiz.get("numero", ""),
         "data_celebacao": campos_raiz.get("data_celebacao", ""),
         "hora_celebacao": campos_raiz.get("hora_celebacao", ""),
         "local_celebacao": campos_raiz.get("local_celebacao", ""),
@@ -661,6 +695,11 @@ _auto_detectar_melhor_modelo()
 
 @app.post("/extract-data", response_model=DadosCasamento)
 async def extract_data(file: UploadFile = File(...)):
+    if not GEMINI_API_KEY:
+        raise HTTPException(
+            status_code=503,
+            detail="GEMINI_API_KEY não configurada! Cole sua chave no arquivo backend/.env (linha GEMINI_API_KEY=sua_chave). Obtenha em: https://aistudio.google.com/apikey"
+        )
     if not file.content_type or not file.content_type.startswith("image/"):
         raise HTTPException(status_code=400, detail="Arquivo deve ser uma imagem.")
 
@@ -798,6 +837,9 @@ async def extract_data(file: UploadFile = File(...)):
             return cur.strip()
         return default
 
+    livro_c = _get_str(dados, "livro")
+    folha_c = _get_str(dados, "folha")
+    numero_c = _get_str(dados, "numero")
     data_c = _get_str(dados, "data_celebacao") or fallback_cabecalho.get("data_celebacao", "")
     if data_c:
         data_c = parse_data_por_extenso_para_ddmmaaaa(data_c)
@@ -823,6 +865,9 @@ async def extract_data(file: UploadFile = File(...)):
     )
 
     saida = DadosCasamento(
+        livro=livro_c,
+        folha=folha_c,
+        numero=numero_c,
         data_celebacao=data_c,
         hora_celebacao=hora_c,
         local_celebacao=local_c,
@@ -836,7 +881,8 @@ async def extract_data(file: UploadFile = File(...)):
         print(f"[Curia IA] Saída final para frontend: {json.dumps(saida.model_dump(mode='json'), ensure_ascii=False)}")
     except Exception:
         print(
-            f"[Curia IA] Saída final ok: data={data_c!r} hora={hora_c!r} local={local_c!r} "
+            f"[Curia IA] Saída final ok: L={livro_c!r} F={folha_c!r} N={numero_c!r} "
+            f"data={data_c!r} hora={hora_c!r} local={local_c!r} "
             f"padre={tq!r} noivo={noivo.nome!r}, noiva={noiva.nome!r}"
         )
     return saida

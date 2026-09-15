@@ -19,11 +19,21 @@ const CuriaAutomation = (() => {
     mainHoraCelebracao: "input[ng-model='matrimonio.horacelebracao'], input#horacelebracao",
     mainLocalCelebracao: "input[ng-model='matrimonio.localcelebracao']",
     mainTestemunhaQualificada: "input[ng-model='matrimonio.celebrante']",
+    mainLivro: "input[ng-model='matrimonio.livro']",
+    mainFolha: "input[ng-model='matrimonio.folha']",
+    mainNumero: "input[ng-model='matrimonio.numero']",
+    finalLivro: "input[ng-model='matrimonio.livro']",
+    finalFolha: "input[ng-model='matrimonio.folha']",
+    finalNumero: "input[ng-model='matrimonio.numero']",
     modalNome: "input[name='nome']",
     modalSexo: "select[name='sexo']",
     modalProfissao: "input[name='profissao']",
     modalMae: "input[name='nmae']",
     modalPai: "input[name='npai']",
+    btnGravarMatrimonio: "input[type='submit'][ng-click='gravarMatrimonio()'], input[value='Gravar'].btn-blue",
+    btnVoltar: "input.btn-red[ng-click='voltar()'], input[value='Voltar']",
+    btnRegistrarAntigo: "input.btn-black[ng-click='antigo()'], input[value='Registrar Antigo']",
+    btnRegistrarNovo: "input.btn-black[ng-click='novo()'], input[value='Registrar Novo']",
   };
 
   const executarNoContextoDaPagina = (fn) => {
@@ -319,6 +329,37 @@ const CuriaAutomation = (() => {
           "TESTEMUNHA QUALIFICADA", "PADRE CELEBRANTE",
         ],
         ngModelKeywords: ["celebrante", "testemunha", "qualificada", "padre", "sacerdote", "oficiante", "redmo"],
+      },
+      {
+        rotulo: "REGISTRO PAROQUIAL - LIVRO",
+        valor: (dados || {}).livro || "",
+        seletoresExatos: [SEL.mainLivro],
+        keywords: [
+          "livro", "livro registro", "registro livro", "livro_", "LIVRO",
+          "REGISTRO PAROQUIAL LIVRO",
+        ],
+        ngModelKeywords: ["livro", "livroregistro", "registrolivro"],
+      },
+      {
+        rotulo: "REGISTRO PAROQUIAL - FOLHA",
+        valor: (dados || {}).folha || "",
+        seletoresExatos: [SEL.mainFolha],
+        keywords: [
+          "folha", "folha registro", "registro folha", "folha_", "FOLHA",
+          "REGISTRO PAROQUIAL FOLHA",
+        ],
+        ngModelKeywords: ["folha", "folharegistro", "registrofolha"],
+      },
+      {
+        rotulo: "REGISTRO PAROQUIAL - NÚMERO",
+        valor: (dados || {}).numero || "",
+        seletoresExatos: [SEL.mainNumero],
+        keywords: [
+          "numero", "número", "numero registro", "registro numero", "termo", "n°", "nº",
+          "NUMERO", "NÚMERO", "REGISTRO PAROQUIAL NUMERO", "REGISTRO PAROQUIAL NÚMERO",
+          "TERMO N", "TERMO N.",
+        ],
+        ngModelKeywords: ["numero", "número", "numeroregistro", "registronumero", "termo"],
       },
     ];
 
@@ -881,6 +922,31 @@ const CuriaAutomation = (() => {
     const startP = 77 + (n - 1) * 11;
     passo(`${startP}% - Adicionando testemunha ${n} (${tipoTestemunhoDe})...`, startP, progressCb);
 
+    if (dadosTestemunha && typeof dadosTestemunha === "string") dadosTestemunha = dadosTestemunha.trim();
+    if (!dadosTestemunha) {
+      passo(`${startP + 1}% - Nome da testemunha ${n} vazio. Pulando cadastro.`, startP + 1, progressCb);
+      return false;
+    }
+
+    // Garantir que NENHUM modal testemunha esteja aberto ANTES (de uma operação anterior falha)
+    const fecharTodosModaisAbertosAntes = () => {
+      try {
+        const todos = document.querySelectorAll(".ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-draggable.ui-resizable");
+        for (const md of todos) {
+          try {
+            if (md.offsetParent !== null) {
+              const fecharX = md.querySelector(".ui-dialog-titlebar-close");
+              if (fecharX) { U.safeClick(fecharX); }
+              const botaoFechar = md.querySelector(".ui-dialog-buttonpane button:last-child");
+              if (botaoFechar && (botaoFechar.textContent || "").toUpperCase().includes("FECHAR")) U.safeClick(botaoFechar);
+            }
+          } catch (_) {}
+        }
+      } catch (_) {}
+    };
+    fecharTodosModaisAbertosAntes();
+    await U.sleep(500);
+
     let btnAdd = document.querySelector(SEL.btnMaisTestemunha);
     if (!btnAdd) {
       const todos = document.querySelectorAll("input.btn-green, button.btn-green, input[value*='Testemunha']");
@@ -894,14 +960,22 @@ const CuriaAutomation = (() => {
     await U.clickElement(btnAdd, 250, 900);
 
     passo(`${startP + 3}% - Aguardando modal de testemunha (ui-dialog)...`, startP + 3, progressCb);
-    const modal = await localizarModal([
-      "TESTEMUNHA",
-      "CADASTRAR TESTEMUNHA",
-      "NOVA TESTEMUNHA",
-      "INCLUIR TESTEMUNHA",
-      "DADOS DA TESTEMUNHA",
-    ]);
-    if (!modal) throw new Error("Modal de testemunha (ui-dialog) não abriu.");
+    let modal = null;
+    const inicio = Date.now();
+    while (Date.now() - inicio < 4000 && !modal) {
+      const modais = document.querySelectorAll(".ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-draggable.ui-resizable");
+      for (const md of modais) {
+        if (md.offsetParent !== null && md.style.display !== "none") {
+          const title = (md.querySelector(".ui-dialog-title")?.textContent || md.querySelector(".ui-dialog-content")?.textContent || "").toUpperCase().substring(0, 300);
+          if (/TESTEMUNHA|CADASTRA|NOVA|INCLUIR|DADOS DA TESTEMUNHA/.test(title)) { modal = md; break; }
+        }
+      }
+      if (!modal) await U.sleep(300);
+    }
+    if (!modal) {
+      modal = await localizarModal(["TESTEMUNHA","CADASTRAR TESTEMUNHA","NOVA TESTEMUNHA","INCLUIR TESTEMUNHA","DADOS DA TESTEMUNHA"]);
+    }
+    if (!modal) throw new Error(`Modal de testemunha ${n} não abriu.`);
 
     const root = modal.querySelector(".ui-dialog-content") || modal;
 
@@ -935,7 +1009,7 @@ const CuriaAutomation = (() => {
       }
     }
     if (tipoSel) await selecionarOpcaoSelectPorTexto(tipoSel, "CELEBRAÇÃO");
-    await U.sleep(300);
+    await U.sleep(350);
 
     passo(`${startP + 7}% - Selecionando Testemunha de: ${tipoTestemunhoDe}...`, startP + 7, progressCb);
     if (testemunhaDeSel) {
@@ -949,9 +1023,9 @@ const CuriaAutomation = (() => {
         }
       }
     }
-    await U.sleep(300);
+    await U.sleep(350);
 
-    passo(`${startP + 9}% - Preenchendo nome da testemunha ${n}...`, startP + 9, progressCb);
+    passo(`${startP + 9}% - Preenchendo nome da testemunha ${n}: ${dadosTestemunha}...`, startP + 9, progressCb);
     const inputs = root.querySelectorAll("input, select, textarea");
     let campoNome = null;
     for (const el of inputs) {
@@ -974,61 +1048,459 @@ const CuriaAutomation = (() => {
           (tudo.includes("NOME") &&
             !tudo.includes("MÃE") && !tudo.includes("MAE") &&
             !tudo.includes("PAI") &&
-            !tudo.includes("FILIAÇÃO") && !tudo.includes("FILIACAO")))
+            !tudo.includes("FILIAÇÃO") && !tudo.includes("FILIACAO") &&
+            !tudo.includes("CELEBRANTE") && !tudo.includes("QUALIFICADA")))
       ) {
-        if (!el.value || el.value.trim() === "") {
+        if (!el.value || el.value.trim() === "" || (tudo.includes("TESTEMUNHA") && !tudo.includes("QUALIFICADA"))) {
           campoNome = el;
-          break;
         }
       }
     }
-    if (!campoNome && dadosTestemunha) {
-      const primeiro = root.querySelector("input[type='text'], input:not([type])");
-      if (primeiro && (!primeiro.value || primeiro.value.trim() === "")) campoNome = primeiro;
+    if (!campoNome) {
+      const primeiros = root.querySelectorAll("input[type='text'], input:not([type])");
+      for (const primeiro of primeiros) {
+        if (primeiro.offsetParent !== null && (!primeiro.value || primeiro.value.trim() === "")) {
+          campoNome = primeiro; break;
+        }
+      }
     }
-    if (campoNome && dadosTestemunha) {
+    if (campoNome) {
       try {
         await preencherElemento(campoNome, dadosTestemunha, progressCb, startP + 9.5, `Nome Testemunha ${n}`, { simularDigitacao: true });
       } catch (e) {
-        console.warn("[CuriaAutomation] cadastrarTestemunha: fallback para setInputValue no campo nome:", e);
+        console.warn("[CuriaAutomation] cadastrarTestemunha: fallback setInputValue:", e);
         U.setInputValue(campoNome, dadosTestemunha, { simulateTyping: true, clearFirst: true, dispatchEvents: true });
         try { await aplicarValorAngularViaInjecao(campoNome, dadosTestemunha, {}); } catch (_) {}
       }
-      await U.sleep(600);
+      await U.sleep(700);
     }
 
-    passo(`${startP + 10}% - Salvando testemunha ${n}...`, startP + 10, progressCb);
-    const salvou = await clicarBotaoModal(
-      modal,
-      ["Salvar", "SALVAR", "Gravar", "GRAVAR", "Confirmar", "CONFIRMAR", "OK", "Associar", "Incluir", "INCLUIR"],
-      false
-    );
-    if (!salvou) {
-      const fecharBtns = modal.querySelectorAll(
-        "input[type='submit'], button.ui-button, input[type='button'], .close, [data-dismiss='modal'], [aria-label='Close'], .ui-dialog-titlebar-close"
-      );
-      for (const b of fecharBtns) {
-        if (b.offsetParent !== null) { try { await U.clickElement(b, 100, 400); break; } catch (_) {} }
+    passo(`${startP + 10}% - Clicando em SALVAR no modal da testemunha ${n}...`, startP + 10, progressCb);
+
+    // Garante que modal ainda existe
+    let salvou = false;
+
+    // 1) Tentativa: buscar botão Salvar pelo SPAN ui-button-text (HTML: <button><span>Salvar</span></button>)
+    const acharBotaoSalvar = () => {
+      try {
+        const spans = modal.querySelectorAll("span.ui-button-text");
+        for (const sp of spans) {
+          const tx = (sp.textContent || "").trim().toUpperCase();
+          if (tx === "SALVAR" || tx.includes("SALVAR")) {
+            const b = sp.closest("button, input[type='submit'], input[type='button']");
+            if (b && b.offsetParent !== null) return b;
+          }
+        }
+        const botoes = modal.querySelectorAll(".ui-dialog-buttonpane button, .ui-dialog-buttonset button");
+        for (const b of botoes) {
+          const tx = (b.textContent || b.value || "").trim().toUpperCase();
+          if (tx === "SALVAR" || tx.startsWith("SALVAR")) return b;
+        }
+      } catch (_) {}
+      return encontrarBotaoPorTextoNoModal(modal, ["Salvar","SALVAR","Gravar","GRAVAR","Confirmar","CONFIRMAR","Incluir","INCLUIR"], false);
+    };
+
+    const modalVisivelAinda = () => document.body.contains(modal) && modal.offsetParent !== null && getComputedStyle(modal).display !== "none";
+
+    const clicarESalvar = new Promise((resolve) => {
+      let jaResolvido = false;
+      const resolver = (r) => { if (!jaResolvido) { jaResolvido = true; resolve(r); } };
+      const timeoutGlobal = setTimeout(() => { resolver(true); }, 3700);
+      const checkInterval = setInterval(() => {
+        try {
+          const aindaVisivel = modalVisivelAinda();
+          if (!aindaVisivel) {
+            clearInterval(checkInterval);
+            clearTimeout(timeoutGlobal);
+            setTimeout(() => resolver(true), 550);
+          }
+        } catch (_) {}
+      }, 200);
+
+      // Tentativa 1 de clique
+      setTimeout(() => {
+        const b1 = acharBotaoSalvar();
+        if (b1) {
+          console.log(`[CuriaAutomation] Testemunha ${n}: clique Salvar (tentativa 1)`);
+          try { b1.dispatchEvent(new MouseEvent("mousedown", {bubbles:true, cancelable:true})); } catch(_){}
+          try { b1.dispatchEvent(new MouseEvent("mouseup", {bubbles:true, cancelable:true})); } catch(_){}
+          try { b1.click(); } catch(_){}
+          try { U.safeClick(b1); } catch(_){}
+        }
+      }, 220);
+
+      // Tentativa 2: se após 1300ms ainda visível, clica com dispatch nativo + Angular trigger
+      setTimeout(() => {
+        try {
+          if (modalVisivelAinda()) {
+            const b2 = acharBotaoSalvar();
+            if (b2) {
+              console.log(`[CuriaAutomation] Testemunha ${n}: clique Salvar (tentativa 2 - foco + submit)`);
+              try { b2.focus(); } catch(_){}
+              try { b2.dispatchEvent(new MouseEvent("click", {bubbles:true, cancelable:true, view: window})); } catch(_){}
+              try { b2.click(); } catch(_){}
+              try { if (typeof(b2.onclick) === "function") b2.onclick.call(b2); } catch(_){}
+            }
+          }
+        } catch(_) {}
+      }, 1350);
+
+      // Tentativa 3: se após 2300ms AINDA visível, executa ação via Angular escopo (se existir ng-click)
+      setTimeout(() => {
+        try {
+          if (modalVisivelAinda()) {
+            console.log(`[CuriaAutomation] Testemunha ${n}: tentativa 3 via ng-click/escopo`);
+            const b3 = acharBotaoSalvar();
+            if (b3) {
+              try {
+                const scope = window.angular && angular.element && angular.element(b3).scope();
+                if (scope) {
+                  const ngClick = b3.getAttribute("ng-click") || "";
+                  if (ngClick) { scope.$apply(ngClick); }
+                }
+              } catch(_) {}
+              try { b3.click(); } catch(_){}
+            }
+          }
+        } catch(_) {}
+      }, 2400);
+
+      // Tentativa 4: após 3000ms, força envio do form dentro do modal
+      setTimeout(() => {
+        try {
+          if (modalVisivelAinda()) {
+            console.log(`[CuriaAutomation] Testemunha ${n}: tentativa 4 submit form`);
+            const forms = (modal.querySelector(".ui-dialog-content") || modal).querySelectorAll("form");
+            for (const f of forms) { try { if (typeof f.submit === "function") f.submit(); } catch(_){} }
+          }
+        } catch(_) {}
+      }, 3050);
+    });
+
+    salvou = await clicarESalvar;
+
+    // Se ainda existe modal, tenta fechar e warn
+    const aindaAberto = modalVisivelAinda();
+    if (aindaAberto) {
+      console.warn(`[CuriaAutomation] Modal testemunha ${n} ainda está aberto após salvar! Tentando Forçar fechamento...`);
+      passo(`${startP + 10.5}% - ⚠️ Modal não fechou. Tentando clique no botão Salvar de novo, depois Fechar...`, startP + 10.5, progressCb);
+      try {
+        const bns = modal.querySelectorAll(".ui-dialog-buttonpane button, .ui-dialog-buttonset button");
+        if (bns && bns.length >= 1) {
+          try {
+            bns[0].click();
+            if (typeof(bns[0].onclick) === "function") bns[0].onclick.call(bns[0]);
+            try { U.safeClick(bns[0]); } catch(_){}
+          } catch(_){}
+          await U.sleep(700);
+        }
+      } catch(_) {}
+      const aindaAberto2 = modalVisivelAinda();
+      if (aindaAberto2) {
+        try {
+          const fecharBtn = modal.querySelector(".ui-dialog-buttonpane button:last-child, .ui-dialog-titlebar-close");
+          if (fecharBtn) {
+            try { fecharBtn.click(); } catch(_){}
+            try { U.safeClick(fecharBtn); } catch(_){}
+          }
+        } catch (_) {}
+        await U.sleep(700);
       }
     }
-    await U.sleep(1200);
+
+    await U.sleep(1400);
+    return true;
   };
 
   const passo4Testemunhas = async (dados, cb) => {
     passo("77% - Iniciando cadastro das testemunhas (após Salvar e Continuar)...", 77, cb);
-    await U.sleep(600);
-    if (dados.testemunha_noivo) {
-      await cadastrarTestemunha(dados.testemunha_noivo, "NOIVO", 1, cb);
-    } else {
-      passo("88% - (Sem testemunha do noivo para cadastrar)", 88, cb);
+    try {
+      await U.sleep(700);
+
+      // Conta quantas testemunhas já existem ANTES de começar
+      const contarTestemunhasNaTabela = () => {
+        try {
+          const tabelas = document.querySelectorAll("table, .table, [class*='testemunha'], [ng-repeat*='testemunha'], [ng-repeat*='Testemunha']");
+          let total = 0;
+          for (const tb of tabelas) {
+            const trs = tb.querySelectorAll("tbody tr, tr, .row, [class*='grid-row']");
+            for (const tr of trs) {
+              if (tr.offsetParent !== null) {
+                const txt = (tr.textContent || "").replace(/\s+/g, " ").trim();
+                if (txt && txt.length > 20 && !txt.toLowerCase().includes("nome") && !txt.includes("(") || tr.querySelectorAll("td, .col").length > 2) {
+                  total++;
+                }
+              }
+            }
+          }
+          const spans = document.querySelectorAll("span, div, p");
+          for (const s of spans) {
+            const txt = (s.textContent || "").replace(/\s+/g, " ").trim();
+            if (/^Testemunha\s*\d/i.test(txt) || txt.includes("Testemunhas (") || /Total:\s*\d+\s*testemunha/i.test(txt)) {
+              const m = txt.match(/\d+/);
+              if (m) total = Math.max(total, parseInt(m[1],10));
+            }
+          }
+          return total;
+        } catch (_) { return 0; }
+      };
+      const qtdAntes = contarTestemunhasNaTabela();
+      console.log("[CuriaAutomation] Quantidade de testemunhas ANTES do passo4:", qtdAntes);
+
+      if (dados.testemunha_noivo) {
+        try {
+          const antes1 = contarTestemunhasNaTabela();
+          await cadastrarTestemunha(dados.testemunha_noivo, "NOIVO", 1, cb);
+          await U.sleep(1600);
+          const depois1 = contarTestemunhasNaTabela();
+          console.log(`[CuriaAutomation] Após testemunha 1: qtd ${antes1} → ${depois1}`);
+          if (depois1 <= antes1) {
+            passo("86% - ⚠️ Não detectamos inclusão da 1ª testemunha na lista! Tentando novamente (1x)...", 86, cb);
+            await U.sleep(500);
+            try { await cadastrarTestemunha(dados.testemunha_noivo, "NOIVO", 1, cb); } catch(_) {}
+            await U.sleep(1600);
+          }
+        }
+        catch (eT) { console.warn("[CuriaAutomation] Erro testemunha 1 NOIVO (continuando):", eT); passo("84% - ⚠️ Erro testemunha 1, continuando mesmo assim...", 84, cb); }
+      } else {
+        passo("84% - (Sem testemunha do noivo para cadastrar)", 84, cb);
+      }
+      // GARANTIR: modal da testemunha 1 FECHOU COMPLETAMENTE e botão +Testemunha reapareceu ANTES da 2ª
+      const esperaModaisFechados = async (tempoMaxMs = 3500) => {
+        const inicio = Date.now();
+        while (Date.now() - inicio < tempoMaxMs) {
+          const abertos = document.querySelectorAll(".ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-draggable.ui-resizable");
+          let algumVisivel = false;
+          for (const md of abertos) { if (md.offsetParent !== null && md.style.display !== "none") { algumVisivel = true; break; } }
+          let btnAddExiste = !!document.querySelector(SEL.btnMaisTestemunha);
+          if (!btnAddExiste) {
+            const todos = document.querySelectorAll("input.btn-green, button.btn-green, input[value*='Testemunha']");
+            for (const b of todos) { if (b.offsetParent !== null) { btnAddExiste = true; break; } }
+          }
+          if (!algumVisivel && btnAddExiste) return true;
+          await U.sleep(250);
+        }
+        return false;
+      };
+      await esperaModaisFechados();
+      await U.sleep(1100);
+
+      if (dados.testemunha_noiva) {
+        try {
+          const antes2 = contarTestemunhasNaTabela();
+          await cadastrarTestemunha(dados.testemunha_noiva, "NOIVA", 2, cb);
+          await U.sleep(1600);
+          const depois2 = contarTestemunhasNaTabela();
+          console.log(`[CuriaAutomation] Após testemunha 2: qtd ${antes2} → ${depois2}`);
+          if (depois2 <= antes2) {
+            passo("90% - ⚠️ Não detectamos inclusão da 2ª testemunha na lista! Tentando novamente (1x)...", 90, cb);
+            await U.sleep(500);
+            try { await cadastrarTestemunha(dados.testemunha_noiva, "NOIVA", 2, cb); } catch(_) {}
+            await U.sleep(1600);
+          }
+        }
+        catch (eT) { console.warn("[CuriaAutomation] Erro testemunha 2 NOIVA (continuando):", eT); passo("90% - ⚠️ Erro testemunha 2, continuando mesmo assim...", 90, cb); }
+      } else {
+        passo("90% - (Sem testemunha da noiva para cadastrar)", 90, cb);
+      }
+      await esperaModaisFechados(2500);
+      await U.sleep(900);
+      // Preencher LIVRO/FOLHA/NÚMERO NA TELA FINAL (duplicada abaixo de testemunhas)
+      try { await passo45PreencherLFNTelaFinal(dados, cb); }
+      catch (eLFN) { console.warn("[CuriaAutomation] Erro passo45 L/F/N (continuando para tentar gravar):", eLFN); }
+      await U.sleep(900);
+    } catch (e) {
+      console.error("[CuriaAutomation] ERRO GERAL passo4Testemunhas (não abortar fluxo!):", e);
+      passo("90% - ⚠️ Erro no cadastro de testemunhas: " + String(e.message||e) + ". Tentando prosseguir para Gravar...", 90, cb);
     }
-    await U.sleep(900);
-    if (dados.testemunha_noiva) {
-      await cadastrarTestemunha(dados.testemunha_noiva, "NOIVA", 2, cb);
-    } else {
-      passo("97% - (Sem testemunha da noiva para cadastrar)", 97, cb);
+  };
+  const passo45PreencherLFNTelaFinal = async (dados, cb) => {
+    passo("92% - Preenchendo LIVRO / FOLHA / NÚMERO na tela final (abaixo das testemunhas)...", 92, cb);
+    const pares = [
+      ["LIVRO", SEL.finalLivro, dados.livro, "matrimonio.livro", 92],
+      ["FOLHA", SEL.finalFolha, dados.folha, "matrimonio.folha", 93],
+      ["NÚMERO", SEL.finalNumero, dados.numero, "matrimonio.numero", 94],
+    ];
+    const buscarUltimoInput = (seletorDireto, ngModel) => {
+      try {
+        const todosDiretos = document.querySelectorAll(seletorDireto);
+        if (todosDiretos && todosDiretos.length > 0) {
+          let el = todosDiretos[todosDiretos.length - 1];
+          if (el && el.offsetParent !== null) return el;
+          for (let i = todosDiretos.length - 1; i >= 0; i--) {
+            if (todosDiretos[i] && todosDiretos[i].offsetParent !== null) return todosDiretos[i];
+          }
+          return todosDiretos[todosDiretos.length - 1];
+        }
+        const todosNgModel = document.querySelectorAll(`input[ng-model='${ngModel}'], input[ng-model="${ngModel}"]`);
+        if (todosNgModel && todosNgModel.length > 0) {
+          for (let i = todosNgModel.length - 1; i >= 0; i--) {
+            if (todosNgModel[i] && todosNgModel[i].offsetParent !== null) return todosNgModel[i];
+          }
+          return todosNgModel[todosNgModel.length - 1];
+        }
+      } catch (e) {
+        console.warn("[CuriaAutomation] buscarUltimoInput fallback:", e);
+      }
+      return null;
+    };
+    for (const [rotulo, seletor, valor, ngModel, pct] of pares) {
+      try {
+        if (!valor) { passo(`92% - ⚠️  ${rotulo} vazio, pulando.`, 92, cb); continue; }
+        let el = buscarUltimoInput(seletor, ngModel);
+        if (!el) {
+          passo(`${pct}% - ❌ Input ${rotulo} não encontrado no DOM. Pulando para não quebrar fluxo (tentar preencher manualmente).`, pct, cb);
+          continue;
+        }
+        passo(`${pct}% - Preenchendo ${rotulo} na tela final: "${valor}"`, pct, cb);
+        await preencherElemento(el, String(valor), cb, pct, rotulo, { simularDigitacao: false });
+        await U.sleep(450);
+      } catch (e2) {
+        console.error(`[CuriaAutomation] ERRO ao preencher ${rotulo} na tela final (fluxo NÃO será quebrado):`, e2);
+        passo(`92% - ⚠️  Erro ao preencher ${rotulo}: ${String(e2.message||e2)}. Continuando fluxo...`, 92, cb);
+        continue;
+      }
     }
-    await U.sleep(800);
+  };
+  const passo5ClicarGravarMatrimonio = async (cb) => {
+    passo("96% - Clicando no botão GRAVAR (azul, ng-click=gravarMatrimonio) para salvar o casamento...", 96, cb);
+    let btn = document.querySelector(SEL.btnGravarMatrimonio);
+    if (!btn) btn = document.querySelector("input[type='submit'].btn-blue, input.btn-blue[value='Gravar']");
+    if (!btn) {
+      const todos = document.querySelectorAll("input[type='submit'], input.btn-blue, .btn-blue");
+      for (const el of todos) {
+        const val = (el.value || el.getAttribute("value") || el.textContent || "").toUpperCase().trim();
+        if (val === "GRAVAR" || val.startsWith("GRAVAR")) { btn = el; break; }
+      }
+    }
+    if (btn) {
+      const btnVisivel = () => document.body.contains(btn) && btn.offsetParent !== null && getComputedStyle(btn).display !== "none";
+      const temBtnGravador = () => {
+        const e1 = document.querySelector(SEL.btnGravarMatrimonio);
+        if (e1 && e1.offsetParent !== null && getComputedStyle(e1).display !== "none") return e1;
+        const todos = document.querySelectorAll("input[type='submit'].btn-blue, input.btn-blue, .btn-blue");
+        for (const el of todos) {
+          const v = (el.value || el.getAttribute("value") || el.textContent || "").toUpperCase().trim();
+          if ((v === "GRAVAR" || v.startsWith("GRAVAR")) && el.offsetParent !== null) return el;
+        }
+        return null;
+      };
+      try {
+        const clickPromise = new Promise((resolve) => {
+          let jaResolvido = false;
+          const resolver = (r) => { if (!jaResolvido) { jaResolvido = true; resolve(r); } };
+          const timeoutG = setTimeout(() => resolver(true), 3200);
+          const intG = setInterval(() => {
+            try {
+              const b = temBtnGravador();
+              if (!b) {
+                clearInterval(intG); clearTimeout(timeoutG);
+                setTimeout(() => resolver(true), 900);
+              }
+            } catch (_) {}
+          }, 200);
+
+          // Tentativa 1 de clique
+          setTimeout(() => {
+            const b = temBtnGravador() || btn;
+            if (b) {
+              console.log("[CuriaAutomation] Gravar: tentativa 1 clique");
+              try { b.dispatchEvent(new MouseEvent("mousedown", {bubbles:true, cancelable:true})); } catch(_){}
+              try { b.dispatchEvent(new MouseEvent("mouseup", {bubbles:true, cancelable:true})); } catch(_){}
+              try { b.dispatchEvent(new MouseEvent("click", {bubbles:true, cancelable:true, view: window})); } catch(_){}
+              try { b.click(); } catch(_){}
+              try { U.safeClick(b); } catch(_){}
+            }
+          }, 200);
+
+          // Tentativa 2: Angular scope -> executar gravarMatrimonio()
+          setTimeout(() => {
+            try {
+              if (temBtnGravador()) {
+                console.log("[CuriaAutomation] Gravar: tentativa 2 Angular escopo");
+                const b = temBtnGravador() || btn;
+                if (b) {
+                  try { b.focus(); } catch(_){}
+                  try {
+                    const scope = window.angular && angular.element && angular.element(b).scope();
+                    if (scope) {
+                      try { if (typeof scope.gravarMatrimonio === "function") { scope.$apply(() => scope.gravarMatrimonio()); } } catch(_){}
+                      try { scope.$apply(b.getAttribute("ng-click") || "gravarMatrimonio()"); } catch(_){}
+                    }
+                  } catch(_) {}
+                  try { b.click(); } catch(_){}
+                }
+              }
+            } catch(_) {}
+          }, 1400);
+
+          // Tentativa 3: submit do formulario mais externo
+          setTimeout(() => {
+            try {
+              if (temBtnGravador()) {
+                console.log("[CuriaAutomation] Gravar: tentativa 3 submit form pai");
+                let p = (temBtnGravador() || btn).parentNode;
+                for (let i = 0; i < 7 && p; i++) {
+                  if (p.tagName === "FORM") {
+                    try { if (typeof p.submit === "function") p.submit(); } catch(_){}
+                    break;
+                  }
+                  p = p.parentNode;
+                }
+              }
+            } catch(_) {}
+          }, 2500);
+        });
+        await clickPromise;
+        passo("98% - Botão Gravar clicado! Aguardando nova tela (Registrar Antigo/Novo)...", 98, cb);
+        await U.sleep(1700);
+        return true;
+      } catch(e) {
+        console.error("[CuriaAutomation] Erro ao clicar Gravar (tentando fallback direto):", e);
+        try { btn.click(); } catch(_){}
+        await U.sleep(1700);
+        return false;
+      }
+    } else {
+      passo("96% - ⚠️  Botão Gravar não encontrado no DOM. Talvez já tenha navegado? Verificando botão Registrar Antigo para pular etapa...", 96, cb);
+      await U.sleep(900);
+      const temRegistrarAntigo = !!document.querySelector(SEL.btnRegistrarAntigo);
+      if (temRegistrarAntigo) passo("97% - ✅ Já estamos na tela de Registrar Antigo! Pulando clique em Gravar.", 97, cb);
+      return temRegistrarAntigo;
+    }
+  };
+  const passo6ClicarRegistrarAntigo = async (cb) => {
+    passo("99% - Clicando em 'Registrar Antigo' (ng-click=antigo) para abrir novo formulário vazio...", 99, cb);
+    let btn = document.querySelector(SEL.btnRegistrarAntigo);
+    if (!btn) {
+      const todos = document.querySelectorAll("input.btn-black, input[type='button']");
+      for (const el of todos) {
+        const val = (el.value || el.getAttribute("value") || "").toUpperCase().trim();
+        if (val.indexOf("REGISTRAR ANTIGO") >= 0) { btn = el; break; }
+      }
+    }
+    if (btn) {
+      U.safeClick(btn);
+      await U.sleep(1700);
+      passo("100% - ✅ Botão Registrar Antigo clicado! Nova tela de formulário vazio carregada. Próximo registro pode começar.", 100, cb);
+      return true;
+    } else {
+      passo("99% - ⚠️  Botão Registrar Antigo não encontrado. Pode ser que a página ainda esteja carregando.", 99, cb);
+      await U.sleep(1200);
+      return false;
+    }
+  };
+  const executarAposPasso4ParaFrente = async (dados, cb) => {
+    try {
+      await passo5ClicarGravarMatrimonio(cb);
+      await U.sleep(900);
+      const ok = await passo6ClicarRegistrarAntigo(cb);
+      return ok;
+    } catch(e) {
+      console.error("[CuriaAutomation] Erro no passo 5/6 (Gravar + Registrar Antigo):", e);
+      passo(`98% - ⚠️  Erro Gravar/Registrar Antigo: ${String(e.message||e)}. Tentando continuar mesmo assim...`, 98, cb);
+      return false;
+    }
   };
 
   const STORAGE_KEY = "curia_ia_sessao_automacao";
@@ -1089,13 +1561,15 @@ const CuriaAutomation = (() => {
       return { retomou: false, motivo: "nao_esta_na_tela_testemunhas" };
     }
     try {
-      if (progressCallback) passo("77% - Detectada nova tela! Retomando automação: cadastrando TESTEMUNHAS...", 77, progressCallback);
-      console.log("[Curia IA] ⚡ RETOMADA DE FLUXO APÓS NAVEGAÇÃO: iniciando passo4Testemunhas...");
+      if (progressCallback) passo("77% - Detectada nova tela! Retomando automação: TESTEMUNHAS → L/F/N → GRAVAR → REGISTRAR ANTIGO...", 77, progressCallback);
+      console.log("[Curia IA] ⚡ RETOMADA DE FLUXO APÓS NAVEGAÇÃO: passo4Testemunhas...");
       await passo4Testemunhas(sessao.dados, progressCallback);
-      passo("100% - Concluído! (Fluxo retomado após Salvar e Continuar) Revise os dados antes de prosseguir manualmente.", 100, progressCallback);
-      console.log("[Curia IA] ✅ Fluxo retomado e concluído após navegação.");
+      await U.sleep(800);
+      await executarAposPasso4ParaFrente(sessao.dados, progressCallback);
+      passo("100% - ✅ Casamento salvo e novo formulário vazio aberto via Registrar Antigo!", 100, progressCallback);
+      console.log("[Curia IA] ✅ Fluxo retomado, Gravar + Registrar Antigo EXECUTADOS.");
       await storageClear();
-      return { retomou: true };
+      return { retomou: true, finalizado: true };
     } catch (e) {
       console.error("[Curia IA] ❌ Erro ao retomar fluxo após navegação:", e);
       if (progressCallback) passo(`90% - Erro ao retomar: ${String(e.message||e)}`, 90, progressCallback);
@@ -1104,7 +1578,7 @@ const CuriaAutomation = (() => {
   };
 
   const executarFluxoCompleto = async (dados, progressCallback) => {
-    passo("Iniciando automação na ORDEM EXATA: Data → Local → T.Qualificada → Noivo → Noiva → Salvar e Continuar → Testemunhas.", 2, progressCallback);
+    passo("Iniciando automação: Data → Local → T.Qualificada → Noivo → Noiva → Salvar e Continuar → Testemunhas → L/F/N → Gravar → Registrar Antigo.", 2, progressCallback);
     await storageClear();
     await U.sleep(500);
     await passo1FormularioPrincipal(dados, progressCallback);
@@ -1113,24 +1587,26 @@ const CuriaAutomation = (() => {
     await U.sleep(1000);
     await passo3CadastrarNoiva(dados, progressCallback);
     await U.sleep(1100);
-    passo("71% - ⚡ Salvando sessão no storage e clicando em Salvar e Continuar (a página vai trocar)...", 71, progressCallback);
+    passo("71% - ⚡ Salvando sessão e clicando em Salvar e Continuar (página vai trocar)...", 71, progressCallback);
     const salvouStorage = await storageSet({
       etapa: "aguardando_tela_testemunhas",
       dados: JSON.parse(JSON.stringify(dados)),
       timestamp: Date.now(),
       progresso: 76,
     });
-    console.log("[Curia IA] Sessão salva no storage para retomar após navegação:", salvouStorage, "etapa=aguardando_tela_testemunhas");
+    console.log("[Curia IA] Sessão salva:", salvouStorage, "etapa=aguardando_tela_testemunhas");
     await clicarSalvarContinuar(progressCallback);
     await U.sleep(800);
     if (estaNaTelaDeTestemunhas()) {
-      console.log("[Curia IA] Página NÃO navegou (ou já avançou e mantivemos DOM). Iniciando passo4Testemunhas DIRETO.");
+      console.log("[Curia IA] Página NÃO navegou. Iniciando passo4Testemunhas → Gravar → Registrar Antigo DIRETO.");
       await passo4Testemunhas(dados, progressCallback);
+      await U.sleep(700);
+      await executarAposPasso4ParaFrente(dados, progressCallback);
       await storageClear();
-      passo("100% - Concluído! Revise os dados antes de prosseguir manualmente.", 100, progressCallback);
+      passo("100% - ✅ Concluído! Gravar executado e Registrar Antigo clicado.", 100, progressCallback);
       return;
     }
-    passo("76% - Página navegando! Aguardando recarregar para retomar Testemunhas automaticamente...", 76, progressCallback);
+    passo("76% - Página navegando! Aguardando recarregar para retomar Testemunhas → Gravar → Registrar Antigo.", 76, progressCallback);
   };
 
   return {
@@ -1139,6 +1615,9 @@ const CuriaAutomation = (() => {
     passo2CadastrarNoivo,
     passo3CadastrarNoiva,
     passo4Testemunhas,
+    passo45PreencherLFNTelaFinal,
+    passo5ClicarGravarMatrimonio,
+    passo6ClicarRegistrarAntigo,
     retomarFluxoAposNavegacao,
     storageGet,
     storageSet,
